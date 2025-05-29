@@ -65,13 +65,33 @@ const found = numbers.find(num => num > 10);
 
 console.log(found); 
 
-//spread and rest Operaters(imp)
+//spread  Operaters(imp)
+let a = [1,2,3,4];
+let b = [...a,5,6,7];
+console.log(b)
 
+//rest
+function myMarks(...mark){
+    console.log(mark)
+}
+myMarks(33,55,66,77,88,99)
 //More Array Methords
 //concat
+let name = ["fathima"];
+const myName = name.concat("shafrin");
+console.log(myName)
 //slice
+let animals = ["tiger","cat","cow","lion","hippopottamass"];
+const newArray = animals.slice(0,3);
+console.log(newArray)
+
 //Splice
+const colors = ['red', 'blue', 'green'];
+colors.splice(1, 1, 'yellow'); // replace 'blue' with 'yellow'
+console.log(colors); 
+
 //fill
+
 //findIndex(callback)
 //Falt
 //reverse
